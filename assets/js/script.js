@@ -11,3 +11,13 @@ $(".saveBtn").on("click", function() {
     //Store Area
     localStorage.setItem(time, value);
 });
+
+$("#hr9 .description").val(localStorage.getItem(""));
+$("#hr10 .description").val(localStorage.getItem(""));
+$("#hr11 .description").val(localStorage.getItem(""));
+$("#hr12 .description").val(localStorage.getItem(""));
+$("#hr1 .description").val(localStorage.getItem(""));
+$("#hr2 .description").val(localStorage.getItem(""));
+$("#hr3 .description").val(localStorage.getItem(""));
+$("#hr4 .description").val(localStorage.getItem(""));
+$("#hr5 .description").val(localStorage.getItem(""));
