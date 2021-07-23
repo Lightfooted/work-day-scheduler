@@ -3,12 +3,11 @@ var presentDay = moment().format('LLL');
 $("#currentDay").append(presentDay);
 //Don't see the difference between append and text
 
-//Save Button Click
+
 $(".saveBtn").on("click", function() {
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-    //Store Area
     localStorage.setItem(time, value);
 });
 
@@ -21,3 +20,7 @@ $("#hr2 .description").val(localStorage.getItem("hr2"));
 $("#hr3 .description").val(localStorage.getItem("hr3"));
 $("#hr4 .description").val(localStorage.getItem("hr4"));
 $("#hr5 .description").val(localStorage.getItem("hr5"));
+
+function hourNow() {
+    var presentHour = moment().hour();
+}
