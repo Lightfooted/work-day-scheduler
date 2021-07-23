@@ -1,8 +1,5 @@
-//Current Day Display
 var presentDay = moment().format('LLL');
 $("#currentDay").append(presentDay);
-//Don't see the difference between append and text
-
 
 $(".saveBtn").on("click", function() {
     var value = $(this).siblings(".description").val();
@@ -23,4 +20,24 @@ $("#hr5 .description").val(localStorage.getItem("hr5"));
 
 function hourNow() {
     var presentHour = moment().hour();
+
+    $(".time-block").each(function() {
+        var blockHour = parseInt($(this).attr("id").split("hr")[1]);
+
+        if (blockHour < presentHour) {
+            $(this).addClass("past");
+        }
+
+        else if (blockHour === presentHour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        }
+
+        else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+        }
+    })
 }
+hourNow();
