@@ -9,9 +9,12 @@ A nine to five work day scheduler. Pick your time of day and jot down your tasks
 ## Screenshot
 
 Empty
-![Screenshot](assets/images/)
+![Screenshot](assets/images/clear.png)
 Filled and highlighted
-![Screenshot](assets/images/)
+![Screenshot](assets/images/filled-timed.png)
+
+### Additional Notes
+On Windows: To test right click on your clock, go to Adjust date/time, turn off auto time, manually set desired time and play with the scheduler. Revert back to original settings when done.
 
 ## Construction
 Completed by Kimberly Collazo
